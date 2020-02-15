@@ -1,0 +1,16 @@
+<view class="home_navigation">
+  <view class="navigation_title">
+    <view 
+    wx:for="{{HomeNavigation}}"
+    wx:key="id"
+    class="title_item {{item.isActive?'active':''}}"
+    bindtap="handleItemTap"
+    data-index="{{index}}"
+    >
+    {{item.name}}
+    </view>
+  </view>
+  <view class="navigation_content">
+    <slot></slot>  <!--  slot就是一个占位符 等到父组件调用子组件时再传递标签过来 slot就会被替换  -->
+  </view>
+</view>

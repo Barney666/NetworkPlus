@@ -1,0 +1,13 @@
+ /*使用主题颜色*/
+/* view{
+  color: var(--themeColor);   
+} */
+
+swiper{
+  width: 100%;
+  height: 400rpx;
+}
+image{
+  width:100%;
+  /* height: 100%; */
+} 

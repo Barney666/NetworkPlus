@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "HomeNavigation":"../../components/HomeNavigation/HomeNavigation"
+  },
+  "navigationBarTitleText": "新闻数据"
+}

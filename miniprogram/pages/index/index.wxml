@@ -1,0 +1,31 @@
+<swiper autoplay interval="3000" circular indicator-dots indicator-color="#ffffff" indicator-active-color="purple">
+
+  <swiper-item>
+    <image mode="widthFix" src="cloud://youth-ky2ez.796f-youth-ky2ez-1301271089/1.PNG"/>
+  </swiper-item>
+
+  <swiper-item>
+    <image mode="widthFix" src="cloud://youth-ky2ez.796f-youth-ky2ez-1301271089/2.png" />
+  </swiper-item>
+
+  <swiper-item>
+    <image mode="widthFix" src="cloud://youth-ky2ez.796f-youth-ky2ez-1301271089/3.PNG" />
+  </swiper-item>
+
+  <swiper-item>
+    <image mode="widthFix" src="cloud://youth-ky2ez.796f-youth-ky2ez-1301271089/4.png" />
+  </swiper-item>
+
+</swiper>
+
+
+<!--父组件向子组建传递数据 通过属性方式-->
+<!--子组件向父组件传递数据 通过事件方式-->
+<HomeNavigation 
+HomeNavigation="{{HomeNavigation}}" 
+binditemChange="handleItemChange"
+>
+  <block wx:if="{{HomeNavigation[0].isActive}}">0</block>
+  <block wx:elif="{{HomeNavigation[1].isActive}}">1</block>  
+  <block wx:else="{{HomeNavigation[2].isActive}}">2</block>  
+</HomeNavigation>
