@@ -14,3 +14,7 @@ page{
   /* 统一字体大小: 1px=2rpx   假设设计稿375rpx  */
   font-size: 28rpx;
 } 
+
+image{
+  width: 100%;
+}

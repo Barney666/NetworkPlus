@@ -1,1 +1,63 @@
-/* pages/shop/shop.wxss */
+page{
+  height: 100%;
+}
+
+.shop_index{
+  height: 100%;
+}
+
+.shop_container{
+  height: calc( 100vh - 90rpx );
+  display: flex;
+}
+
+
+
+
+
+.left_menu{
+  flex:2;
+}
+.left_menu .menu_item{
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+.left_menu .active{
+  color: var(--themeColor);
+  border-left: 5rpx solid currentColor;
+}
+
+
+
+
+
+.right_content{
+  flex: 5;
+}
+.right_content .goods_group .goods_title{
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right_content .goods_group .goods_title .delimiter{
+ color: #ccc;
+ padding: 0 10rpx;
+}
+.right_content .goods_group .goods_title .title{
+
+}
+.right_content .goods_group .goods_list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.right_content .goods_group .goods_list navigator{
+  width: 33.33%;
+  text-align: center;
+}
+.right_content .goods_group .goods_list navigator image{
+  width: 50%;
+}

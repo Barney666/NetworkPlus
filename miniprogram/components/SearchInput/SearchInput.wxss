@@ -10,7 +10,7 @@
   text-align: center;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
   background-color: #fff;
   border-radius: 15rpx;
