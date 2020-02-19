@@ -4,7 +4,8 @@
     "pages/game/game",
     "pages/shop/shop",
     "pages/self/self",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/goods_list/goods_list"
   ],
   "window": {
     "background-color":"#F6F6F6",
@@ -41,6 +42,5 @@
       }
     ]
   },
-  "sitemapLocation": "sitemap.json",
   "style": "v2"
 }
