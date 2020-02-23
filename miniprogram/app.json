@@ -5,10 +5,11 @@
     "pages/shop/shop",
     "pages/self/self",
     "pages/search/search",
-    "pages/goods_list/goods_list"
+    "pages/goods_list/goods_list",
+    "pages/goods_detail/goods_detail"
   ],
   "window": {
-    "background-color":"#F6F6F6",
+    "background-color": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "CreateYouth",
@@ -42,5 +43,6 @@
       }
     ]
   },
-  "style": "v2"
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
 }

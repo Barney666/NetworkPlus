@@ -5,41 +5,22 @@
     <block wx:if="{{tabs[0].isActive}}">
         <view class="first_tab">
 
-            <navigator class="goods_item">
+            <navigator class="goods_item"
+            wx:for="{{goodsList}}"
+            wx:key="goods_id"
+            url="/pages/goods_detail/goods_detail?goods_id={{item.goods_id}}"
+            >
                 <!-- 左侧 图片容器-->
                 <view class="goods_img_wrap">
-                    <image mood="widthFix" src="cloud://youth-ky2ez.796f-youth-ky2ez-1301271089/5.JPG"></image>
+                    <image mood="aspectFit" src="{{item.goods_small_logo?item.goods_small_logo:'cloud://youth-ky2ez.796f-youth-ky2ez-1301271089/5.JPG'}}"></image>
                 </view>
                 <!-- 右侧 商品容器-->
                 <view class="goods_info_wrap">
-                    <view class="goods_name">三星(Samsung)4K智能电视 HDR超薄</view>
-                    <view class="goods_price">¥4999</view>
+                    <view class="goods_name">{{item.goods_name}}</view>
+                    <view class="goods_price">¥ {{item.goods_price}}</view>
                 </view>
             </navigator>
 
-            <navigator class="goods_item">
-                <!-- 左侧 图片容器-->
-                <view class="goods_img_wrap">
-                    <image mood="widthFix" src="cloud://youth-ky2ez.796f-youth-ky2ez-1301271089/5.JPG"></image>
-                </view>
-                <!-- 右侧 商品容器-->
-                <view class="goods_info_wrap">
-                    <view class="goods_name">三星(Samsung)4K智能电视 HDR超薄</view>
-                    <view class="goods_price">¥4999</view>
-                </view>
-            </navigator>
-
-            <navigator class="goods_item">
-                <!-- 左侧 图片容器-->
-                <view class="goods_img_wrap">
-                    <image mood="widthFix" src="cloud://youth-ky2ez.796f-youth-ky2ez-1301271089/5.JPG"></image>
-                </view>
-                <!-- 右侧 商品容器-->
-                <view class="goods_info_wrap">
-                    <view class="goods_name">三星(Samsung)4K智能电视 HDR超薄</view>
-                    <view class="goods_price">¥4999</view>
-                </view>
-            </navigator>
 
         </view>
     </block>
