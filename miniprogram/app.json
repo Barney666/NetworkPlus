@@ -6,7 +6,8 @@
     "pages/self/self",
     "pages/search/search",
     "pages/goods_list/goods_list",
-    "pages/goods_detail/goods_detail"
+    "pages/goods_detail/goods_detail",
+    "pages/cart/cart"
   ],
   "window": {
     "background-color": "#F6F6F6",

@@ -44,7 +44,8 @@ Page({
   //获取商品列表数据
   getGoodsList(){
     request({
-      url:"https://api.zbztb.cn/api/public/v1/goods/search",
+      url:"https://api-hmugo-web.itheima.net/api/public/v1/goods/search",
+      // url:"https://api.zbztb.cn/api/public/v1/goods/search",
       data: this.QueryParams
     }).then(result =>{
       const total=result.data.message.total;

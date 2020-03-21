@@ -1,3 +1,10 @@
+page{
+    padding-bottom: 90rpx;
+    /*  90rpx是和.btm_tool的height保持一致 防止挡住最下面的图片  */
+}
+
+
+
 .detail_swiper swiper{
     height: 65vw;
     text-align: center;
@@ -44,7 +51,6 @@
 }
 
 
-
 .goods_info_title{
     font-size: 32rpx;
     color: var(--themeColor);
@@ -53,9 +59,80 @@
 }
 
 
-
-
 .goods_collect image{
     width: 30rpx;
     height: 30rpx;
 }
+
+
+.btm_tool{
+    border-top: 1rpx solid #ccc;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 90rpx;
+    background-color: #ffffff;
+    display: flex;
+}
+.btm_tool .tool_item{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.tool_item image{
+    width: 40rpx;
+    height: 40rpx;
+}
+/*整一个button放在客服view的下面 因为样式不好改 所以干脆在写了个view后 把button藏在view下面 后面也是这样*/
+.tool_item button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.btm_tool .btn_cart{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffa500;
+    color: #ffffff;
+    font-size: 30rpx;
+    font-weight: 600;
+}
+.btm_tool .btn_buy{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eb4450;
+    color: #ffffff;
+    font-size: 30rpx;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

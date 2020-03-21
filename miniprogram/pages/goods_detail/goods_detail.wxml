@@ -3,6 +3,9 @@
         <swiper-item
         wx:for="{{goodsObj.pics}}"
         wx:key="pics_id"
+        bindtap="handlePreviewImage"
+        data-url="{{item.pics_mid}}"
+
         >
             <image mode="widthFix" src="{{item.pics_mid}}"></image>
         </swiper-item>
@@ -14,7 +17,7 @@
 <view class="goods_name_row">
     <view class="goods_name">{{goodsObj.goods_name}}</view>
     <view class="goods_collect">
-        <image src="../../icon/icon-collect.png" />
+        <image src="../../icon/icon-collect-n.png" />
         <view class="collect_text">收藏</view>
     </view>
 </view>
@@ -25,4 +28,29 @@
     <view class="goods_info_content">
         <rich-text nodes="{{goodsObj.goods_introduce}}"></rich-text>
     </view>
+</view>
+
+
+<view class="btm_tool">
+    <view class="tool_item">
+        <image mood="aspectFit" src="../../icon/Service.png" />
+        客服
+        <button open-type="contact"></button>
+    </view>
+
+    <view class="tool_item">
+        <image mood="aspectFit" src="../../icon/Share.png" />
+        分享
+        <button open-type="share"></button>
+    </view>
+
+    <navigator url="/pages/cart/cart" class="tool_item">
+        <image mood="aspectFit" src="../../icon/Cart.png" />
+        购物车
+    </navigator>
+    <view class="tool_item btn_cart" bindtap="handleCartAdd">
+        加入购物车
+    </view>
+    <view class="tool_item btn_buy">立即购买</view>
+
 </view>
