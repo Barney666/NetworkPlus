@@ -1,0 +1,230 @@
+.container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+.background{   /* 仍用index那种直接的方法的话 topFrame用margin-top的时候最上面会有留白 */
+    position: absolute;
+    width: 100%;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+}
+.topFrame{
+    width: 612rpx;
+    height: 168rpx;
+    opacity: 0.8;
+    border-radius: 26rpx;
+    background-color: rgba(255, 255, 255, 1);
+    border: 2rpx solid rgba(151, 151, 151, 1);
+    display: flex;
+    flex-direction: row;
+    margin-left: 70rpx;
+    margin-top: 50rpx;
+    position: relative;
+    z-index: 0;
+}
+.user_icon{
+    width: 130rpx;
+    height: 130rpx;
+    border-radius: 50%;
+    margin-left: 100rpx;
+    margin-top: 70rpx;
+    position: absolute;
+    z-index: 1;
+}
+.split{
+    height: 168rpx;
+    border: 1rpx solid #D8D8D8;
+    position: absolute;
+    z-index: 1;
+    margin-left: 250rpx;
+    margin-top: 50rpx;
+}
+.realInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    margin-left: 280rpx;
+    margin-top: 60rpx;
+}
+.preInfo{
+    font-size: 35rpx;
+    font-weight: bold;
+    margin-left: 60rpx;
+
+}
+.infoWord{
+    font-size: 35rpx;
+    margin-left: 10rpx;
+}
+
+.mid{
+    display: flex;
+    flex-direction: row;
+}
+.midFrame{
+    width: 692rpx;
+    height: 214rpx;
+    opacity: 0.8;
+    border-radius: 26rpx;
+    background-color: rgba(255, 255, 255, 1);
+    border: 2rpx solid rgba(151, 151, 151, 1);
+    margin-left: 30rpx;
+    margin-top: 60rpx;
+    position: relative;
+    z-index: 0;
+}
+.midTopText{
+    color: rgba(250, 100, 0, 1);
+    font-size: 34rpx;
+    font-family: PingFangSC-Semibold;
+    margin-top: 80rpx;
+    margin-left: 60rpx;
+    position: absolute;
+    z-index: 1;
+}
+.midMid{
+    width: 692rpx;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 1;
+}
+
+.midMidText{
+    color: rgba(0, 0, 0, 1);
+    font-size: 34rpx;
+    font-family: PingFangSC-Medium;
+    margin-left: 60rpx;
+    margin-top: 145rpx;
+
+}
+.midMid image{
+    width: 10%;
+    margin-left: 60rpx;
+    margin-top: 135rpx;
+}
+.ranking{
+    color: rgba(0, 0, 255, 1);
+    font-size: 32rpx;
+    text-align: left;
+    font-family: STHeiti;
+    font-style: italic;
+    text-decoration: underline;
+    position: absolute;
+    z-index: 1;
+    margin-left: 60rpx;
+    margin-top: 210rpx;
+    margin-bottom: 20rpx;
+}
+
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+}
+.bottomFrame{
+    width: 692rpx;
+    height: 736rpx;
+    opacity: 0.83;
+    border-radius: 26rpx;
+    background-color: rgba(255, 255, 255, 1);
+    border: 2rpx solid rgba(151, 151, 151, 1);
+    margin-left: 28rpx;
+    margin-top: 100rpx;
+    position: relative;
+    z-index: 0;
+}
+.bottomTop{
+    width: 336rpx;
+    height: 58rpx;
+    color: rgba(0, 0, 0, 1);
+    font-size: 42rpx;
+    text-align: left;
+    font-family: PingFangSC-Medium;
+    margin-left: 50rpx;
+    margin-top: 130rpx;
+    position: absolute;
+    z-index: 1;
+}
+
+.bottomBottom{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 1;
+}
+.bottomBottomElement{
+    display: flex;
+    flex-direction: column;
+}
+.Element1_image{
+    width: 70%;
+    margin-left: 50rpx;
+    margin-top: 220rpx;
+}
+.Element1_text{
+    margin-left: 50rpx;
+    margin-top: 20rpx;
+    font-size: 36rpx;
+    font-weight: bold;
+}
+.Element2_image{
+    width: 70%;
+    margin-left: 85rpx;
+    margin-top: 200rpx;
+}
+.Element2_text{
+    margin-left: 105rpx;
+    font-size: 36rpx;
+    font-weight: bold;
+}
+.Element3_image{
+    width: 60%;
+    margin-left: 100rpx;
+    margin-top: 220rpx;
+}
+.Element3_text{
+    margin-left: 100rpx;
+    margin-top: 16rpx;
+    font-size: 36rpx;
+    font-weight: bold;
+}
+.Element4_image{
+    width: 70%;
+    margin-left: 50rpx;
+    margin-top: 500rpx;
+}
+.Element4_text{
+    margin-left: 50rpx;
+    margin-top: 32rpx;
+    font-size: 36rpx;
+    font-weight: bold;
+}
+.Element5_image{
+    width: 60%;
+    margin-left: 100rpx;
+    margin-top: 500rpx;
+}
+.Element5_text{
+    margin-left: 100rpx;
+    margin-top: 16rpx;
+    font-size: 36rpx;
+    font-weight: bold;
+}
+.Element6_image{
+    width: 60%;
+    margin-left: 100rpx;
+    margin-top: 500rpx;
+}
+.Element6_text{
+    margin-left: 100rpx;
+    margin-top: 16rpx;
+    font-size: 36rpx;
+    font-weight: bold;
+}

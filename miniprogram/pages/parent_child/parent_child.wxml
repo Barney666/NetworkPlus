@@ -1,0 +1,68 @@
+<view class="container" background-image="../../icon/family.png">
+    <image  class="background" mode="widthFix" src="../../icon/family.png"></image>
+
+    <view class="top">
+        <view class="topFrame"></view>
+        <image class="user_icon" src="{{userInfo.avatarUrl}}"></image>
+        <view class="split"></view>
+        <view class="realInfo">
+            <view class="infoFrame">
+                <text class="preInfo">您的姓名：</text>
+                <text class="infoWord">张三</text>            <!--假的-->
+            </view>
+            <view class="infoFrame">
+                <text class="preInfo">您的年龄：</text>
+                <text class="infoWord">50</text>            <!--假的-->
+            </view>
+            <view class="infoFrame">
+                <text class="preInfo">您的身份：</text>
+                <text class="infoWord">父亲</text>            <!--假的-->
+            </view>
+        </view>
+    </view>
+
+    <view class="mid">
+        <view class="midFrame"></view>
+        <text class="midTopText">与您绑定亲子账户的人：女儿——张思睿</text>    <!--假的-->
+        <view class="midMid">
+            <text class="midMidText">你们之间的亲密度：89</text>            <!--假的-->
+            <image mode="widthFix" src="../../icon/qinmidusuanfa.png"></image>
+        </view>
+        <navigator class="ranking">点击此处查看好友亲密度排行</navigator>     <!--还没写-->
+    </view>
+
+
+    <view class="bottom">
+        <view class="bottomFrame"></view>
+        <text class="bottomTop">提高亲密度方法：</text>
+        <view class="bottomBottom">             <!--图片大小不同 为了好看 只能一个一个调了-->
+            <view class="bottomBottomElement">
+                <image class="Element1_image" mode="widthFix" src="../../icon/liaotianhudong.png"></image>
+                <text class="Element1_text">聊天互动</text>
+            </view>
+            <view class="bottomBottomElement">
+                <image class="Element2_image" mode="widthFix" src="../../icon/youxi.png"></image>
+                <text class="Element2_text">娱乐互动</text>
+            </view>
+            <view class="bottomBottomElement">
+                <image class="Element3_image" mode="widthFix" src="../../icon/xinyuandan.png"></image>
+                <text class="Element3_text">心愿分享</text>
+            </view>
+        </view>
+        <view class="bottomBottom">
+            <view class="bottomBottomElement">
+                <image class="Element4_image" mode="widthFix" src="../../icon/shengri.png"></image>
+                <text class="Element4_text">生日惊喜</text>
+            </view>
+            <view class="bottomBottomElement">
+                <image class="Element5_image" mode="widthFix" src="../../icon/baogao.png"></image>
+                <text class="Element5_text">健康报告</text>
+            </view>
+            <view class="bottomBottomElement">
+                <image class="Element6_image" mode="widthFix" src="../../icon/chongzhi.png"></image>
+                <text class="Element6_text">充值金贝</text>
+            </view>
+        </view>
+    </view>
+
+</view>

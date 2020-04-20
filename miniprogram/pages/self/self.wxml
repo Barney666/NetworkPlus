@@ -1,2 +1,3 @@
-<!--pages/self/self.wxml-->
-<text>pages/self/self.wxml</text>
+<image class="user_icon" src="{{userInfo.avatarUrl}}"></image>
+
+<navigator url="../login/login" >点击登陆</navigator>

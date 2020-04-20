@@ -1,31 +1,98 @@
-<swiper autoplay interval="3000" circular indicator-dots indicator-color="#ffffff" indicator-active-color="purple">
-
-  <swiper-item>
-    <image mode="widthFix" src="cloud://youth-ky2ez.796f-youth-ky2ez-1301271089/1.PNG"/>
-  </swiper-item>
-
-  <swiper-item>
-    <image mode="widthFix" src="cloud://youth-ky2ez.796f-youth-ky2ez-1301271089/2.png" />
-  </swiper-item>
-
-  <swiper-item>
-    <image mode="widthFix" src="cloud://youth-ky2ez.796f-youth-ky2ez-1301271089/3.PNG" />
-  </swiper-item>
-
-  <swiper-item>
-    <image mode="widthFix" src="cloud://youth-ky2ez.796f-youth-ky2ez-1301271089/4.png" />
-  </swiper-item>
-
-</swiper>
 
 
-<!--父组件向子组建传递数据 通过属性方式-->
-<!--子组件向父组件传递数据 通过事件方式-->
-<HomeNavigation 
-HomeNavigation="{{HomeNavigation}}" 
-binditemChange="handleItemChange"
->
-  <block wx:if="{{HomeNavigation[0].isActive}}">0</block>
-  <block wx:elif="{{HomeNavigation[1].isActive}}">1</block>  
-  <block wx:else="{{HomeNavigation[2].isActive}}">2</block>  
-</HomeNavigation>
+<image class="index_background" mode="widthFix" src="cloud://youth-ky2ez.796f-youth-ky2ez-1301271089/indexBackground.png"/>
+
+
+
+<view class="top">
+
+  <view class="leftText">
+    <image class="user_icon" src="{{userInfo.avatarUrl}}"></image>
+    <view class="left_module">
+      <image mode="widthFix" src="../../icon/qiandao.png"></image>
+      <text>每日签到</text>
+      <view class="split"></view>
+      <image mode="widthFix" src="../../icon/renwu.png"></image>
+      <text>每日任务</text>
+      <view class="split"></view>
+      <image mode="widthFix" src="../../icon/shuimian.png"></image>
+      <text>睡眠计划</text>
+    </view>
+  </view>
+
+  <view class="bottomRightWord">
+    <view class="shell">
+      <view class="rainbow">
+        <text class="word">小金贝</text>
+        <image mode="widthFix" src="../../icon/beike.png"></image>
+        <view class="split"></view>
+        <text class="num">35</text>     <!--这里是假的 正常要读数据的-->
+      </view>
+    </view>
+
+    <view class="brain_training">
+      <image mode="widthFix" src="../../icon/danao.png"></image>
+      <text class="brain_training_text">大脑训练</text>
+      <view class="start">
+        <text class="start_text">开始</text>
+      </view>
+    </view>
+
+    <view class="parent_child">
+      <image mode="widthFix" src="../../icon/parent_child.png"></image>
+      <navigator class="parent_child_text" url="../parent_child/parent_child">亲子互动</navigator>
+    </view>
+  </view>
+
+</view>
+
+
+
+<view class="bottom">
+  <text class="outText">更多功能模块</text>
+
+  <view class="out">
+    <image mode="widthFix" src="../../icon/yinshi.png"></image>
+    <text class="leftText">饮食优化:</text>
+    <view class="bottomRightWord">
+      <text>查询健康食物</text>
+      <text>合理规划饮食</text>
+    </view>
+    <text class="go">></text>
+  </view>
+
+  <view class="out">
+    <image mode="widthFix" src="../../icon/yundong.png"></image>
+    <text class="leftText">运动助手:</text>
+    <view class="bottomRightWord">
+      <text>每日运动记录</text>
+      <text>辅助心率监测</text>
+    </view>
+    <text class="go">></text>
+  </view>
+
+  <view class="out">
+    <image mode="widthFix" src="../../icon/yuedu.png"></image>
+    <text class="leftText">有声阅读:</text>
+    <view class="bottomRightWord">
+      <text>收听时事新闻</text>
+      <text>播放广播电台</text>
+    </view>
+    <text class="go">></text>
+  </view>
+
+  <view class="out">
+    <image mode="widthFix" src="../../icon/mingxiang.png"></image>
+    <text class="leftText">放松解压:</text>
+    <view class="bottomRightWord">
+      <text>歌曲帮助放松</text>
+      <text>提升专注能力</text>
+    </view>
+    <text class="go">></text>
+  </view>
+</view>
+
+
+
+
+
