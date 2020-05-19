@@ -17,8 +17,14 @@
     <view class="mid">
 
         <view wx:if="{{realInfo.realName}}" class="notReal">
-            <view>你好 {{realInfo.realName}}</view>
-            <view>你的年龄 {{realInfo.age}}</view>
+            <view class="midFrame">
+                <view class="remind">您好，</view>
+                <view class="realInfo">{{realInfo.realName}}</view>
+            </view>
+            <view class="midFrame">
+                <view class="remind">您的年龄：</view>
+                <view class="realInfo">{{realInfo.age}}</view>
+            </view>
         </view>
         <view wx:else class="real">
             <button type="primary" plain>
@@ -31,15 +37,31 @@
     <view class="bottom">
 
         <view wx:if="{{bindInfo.familyName}}">
-            <view>您的身份:{{bindInfo.selfIdentity}}</view>
-            <view>与您绑定的人:{{bindInfo.familyIdentity}}---{{bindInfo.familyName}}</view>
+            <view class="bottomFrame">
+                <view class="remind">您的身份：</view>
+                <view class="realInfo">{{bindInfo.selfIdentity}}</view>
+            </view>
+            <view class="bottomFrame">
+                <view class="remind">与您绑定的人：</view>
+                <view class="familyIdentity">{{bindInfo.familyIdentity}}</view>
+                <view class="remind">---</view>
+                <view class="familyName">{{bindInfo.familyName}}</view>
+            </view>
+            <view class="bottomFrame">
+                <view class="remind">你们之间的亲密值：</view>
+                <view class="familyIdentity">{{bindInfo.intimate}}</view>
+            </view>
         </view>
-        <view wx:else class="Binded">
-        <button type="primary" plain>
-            <navigator open-type="redirect" url="../bind/bind">绑定亲子账户</navigator>
-        </button>
-    </view>
+
+        <view wx:elif="{{bindInfo.familyWechat}}" class="remind">等待对方确认绑定中...</view>
+
+        <view wx:else class="bound">
+            <button type="primary" plain>
+                <navigator open-type="redirect" url="../bind/bind">绑定亲子账户</navigator>
+            </button>
+        </view>
 
     </view>
+
 
 </view>

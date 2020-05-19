@@ -1,12 +1,19 @@
 <view class="all">
 
-    <view>
+    <view class="appease">
+        请您放心填写自己的相关信息，我们将为您绝对保密，只应用于您和家人的信息展示与绑定。
+    </view>
+    <view class="appease">
+        请注意：微信号为用户之间绑定的唯一凭据，请认真填写，此页面内容一旦提交不可更改！
+    </view>
+
+    <view class="remind">
         <input bindinput="realInput" data-index="realName" placeholder="请输入真实姓名"/>
     </view>
-    <view>
+    <view class="remind">
         <input bindinput="realInput" data-index="age" placeholder="请输入您的年龄"/>
     </view>
-    <view>
+    <view class="remind">
         <input bindinput="realInput" data-index="wechat" placeholder="请输入您的微信号"/>
     </view>
 

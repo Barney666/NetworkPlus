@@ -1,1 +1,11 @@
-/* pages/realInfo/realInfo.wxss */
+
+.appease{
+    font-size: 30rpx;
+    font-weight: bold;
+    font-style: italic;
+    margin: 30rpx;
+}
+.remind{
+    font-size: 40rpx;
+    margin: 100rpx;
+}

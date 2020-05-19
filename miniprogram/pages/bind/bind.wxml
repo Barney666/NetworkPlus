@@ -1,22 +1,33 @@
 <view class="all">
 
+    <!--进来的时候要loading一下 不然因为查数据库比较慢 一开始渲染不正确-->
+    <loading hidden="{{onOff}}">加载中...</loading>
+
     <view wx:if="{{bindInfo.familyName}}">
-        <view>{{bindInfo.familyName}}要和你绑定</view>
+
+        <view class="remind">{{bindInfo.familyName}}请求与您绑定</view>
         <button type="primary" plain bindtap="updateDatabase">
             <navigator open-type="switchTab" url="../self/self">确认绑定</navigator>
         </button>
+
     </view>
+
     <view wx:else>
 
-        <view>
+        <view class="appease">
+            再次提醒，您所填写的家人的微信号是验证绑定的唯一凭证，请谨慎填写，否则可能会无法成功绑定！
+        </view>
+
+        <view class="remind">
             <input bindinput="realInput" data-index="familyWechat" placeholder="请输入要与您绑定的家人的微信号"/>
         </view>
 
         <view>
             <picker bindchange="identityPick" value="{{index}}" range="{{identityArray}}">
-                <view class="choice">
-                    身份选择[您-您的家人]：{{identityArray[index]}}
-                </view>
+               <view class="pick">
+                   <view class="pickerRemind">点击选择身份[您-您的家人]：</view>
+                   <view class="choice">{{identityArray[index]}}</view>
+               </view>
             </picker>
         </view>
 

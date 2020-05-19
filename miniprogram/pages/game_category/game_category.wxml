@@ -1,0 +1,25 @@
+
+<!--监听自定义事件-->
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+
+    <block wx:if="{{tabs[0].isActive}}">
+        <view class="first_tab">
+
+            <view class="first_game">
+                <image mode="widthFix" src="cloud://youth-ky2ez.796f-youth-ky2ez-1301271089/舒尔特方格.jpeg"></image>
+                <view class="right">
+                    <view class="game_name">舒尔特方格</view>
+                    <view class="game_difficulty">难度系数: ⭐️⭐️</view>
+                </view>
+            </view>
+
+        </view>
+    </block>
+
+
+
+
+    <block wx:if="{{tabs[1].isActive}}">1</block>
+    <block wx:if="{{tabs[2].isActive}}">2</block>
+    <block wx:if="{{tabs[3].isActive}}">3</block>
+</Tabs>

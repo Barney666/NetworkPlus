@@ -8,34 +8,71 @@
 .top{
     flex-grow: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #C8EFFC;
 }
-.nickName{
-   font-size: 40rpx;
-    margin-left: 40rpx;
-}
-.mid{
-    flex-grow: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.bottom{
-    flex-grow: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-
-
 .user_icon{
     width: 130rpx;
     height: 130rpx;
     border-radius: 50%;
     margin: 25rpx;
 }
+
+.nickName{
+    font-size: 40rpx;
+    margin-left: 30rpx;
+}
+
+
+.mid{
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.midFrame{
+    display: flex;
+    flex-direction: row;
+    margin: 80rpx;
+}
+.real{
+    margin-top: 200rpx;
+}
+.remind{
+    font-size: 40rpx;
+    color: #666666;
+}
+.realInfo{
+    font-size: 40rpx;
+    font-weight: bold;
+}
+
+.bottom{
+    flex-grow: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottomFrame{
+    display: flex;
+    flex-direction: row;
+    margin: 30rpx;
+}
+.familyIdentity{
+    font-size: 40rpx;
+    font-weight: bold;
+}
+.familyName{
+    font-size: 40rpx;
+    font-weight: bold;
+    color: #ff7a3e;
+}
+
+
+.bound{
+
+}
+

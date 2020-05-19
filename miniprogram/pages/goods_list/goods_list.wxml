@@ -1,6 +1,6 @@
 <SearchInput></SearchInput>
 
-<!--监听自定义时事件-->
+<!--监听自定义事件-->
 <Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
     <block wx:if="{{tabs[0].isActive}}">
         <view class="first_tab">

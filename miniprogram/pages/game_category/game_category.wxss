@@ -1,1 +1,35 @@
-/* pages/game_category/game_category.wxss */
+
+.first_tab{
+    display: flex;
+    flex-direction: column;
+}
+.first_game{
+    display: flex;
+    flex-direction: row;
+    background: #FFFFFF;
+    border: 2rpx solid #979797;
+    border-radius: 80rpx;
+    height: 300rpx;
+    margin: 30rpx;
+}
+.first_game image{
+    width: 230rpx;
+    flex-grow: 1;
+    margin-left: 50rpx;
+    margin-top: 8rpx;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    align-items: center;
+    justify-content: space-around;
+}
+.game_name{
+    font-size: 50rpx;
+    font-weight: bold;
+}
+.game_difficulty{
+    font-size: 40rpx;
+    font-style: italic;
+}

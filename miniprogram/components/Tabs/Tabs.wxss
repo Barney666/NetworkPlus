@@ -13,6 +13,7 @@
 }
 
 .tabs .active{
-  color: var(--themeColor);
+  color: #0D93F2;
+  /*color: var(--themeColor);*/
   border-bottom: 5rpx solid currentColor;
 }

@@ -1,1 +1,24 @@
-/* pages/bind/bind.wxss */
+.appease{
+    font-size: 30rpx;
+    font-weight: bold;
+    font-style: italic;
+    margin: 30rpx;
+}
+
+.remind{
+    font-size: 36rpx;
+    margin: 100rpx;
+}
+.pick{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 80rpx;
+}
+.pickerRemind{
+    font-size: 40rpx;
+}
+.choice{
+    font-size: 38rpx;
+    font-weight: bold;
+    color: #8042ff;
+}

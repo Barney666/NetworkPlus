@@ -1,7 +1,6 @@
 {
   "pages": [
     "pages/self/self",
-    "pages/q/q",
     "pages/realInfo/realInfo",
     "pages/bind/bind",
     "pages/category/category",

@@ -11,7 +11,8 @@ Page({
       selfIdentity:null,
       familyIdentity:null,
       familyName:null,
-      familyWechat:null
+      familyWechat:null,
+      intimate:90
     },
     index:null,
     identityArray:[
@@ -26,6 +27,7 @@ Page({
     selfId:null,
     familyId:null,
 
+    onOff:false
 },
 
 
@@ -58,6 +60,13 @@ Page({
         }
       }
     })
+  },
+
+  onShow: function(){
+    var that=this;
+    setTimeout(function(){
+      that.setData({onOff:true});
+    },2000);
   },
 
 
@@ -105,6 +114,7 @@ Page({
             "familyIdentity":this.data.bindInfo.selfIdentity,
             "familyWechat":this.data.realInfo.wechat,
             "familyName":this.data.realInfo.realName,
+            "intimate":this.data.bindInfo.intimate,
           }
         }
       }).then(res=>{
@@ -151,9 +161,8 @@ Page({
         }
       })
     })
+  },
 
 
-
-  }
 
 })
