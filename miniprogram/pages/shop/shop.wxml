@@ -1,50 +1,45 @@
-<view class="shop_index">
-  <SearchInput></SearchInput>
-  <view class="shop_container">
 
-    <!--左侧菜单-->
-    <scroll-view scroll-y class="left_menu">
+<SearchInput></SearchInput>
 
-      <view 
-      class="menu_item {{index===currentIndex?'active':''}}"
-      wx:for="{{dataList}}" 
-      wx:key="item"
-      bindtap="handleItemTap"
-      data-index="{{index}}"
-      >
-      {{item.cat_name}}
-      </view>
+<!--<image class="background" mode="widthFix" src="../../icon/grey.png"></image>-->
 
-    </scroll-view>
+<swiper autoplay interval="3000" circular indicator-dots indicator-color="#ffffff" indicator-active-color="orange">
+    <swiper-item>
+        <image class="swiperItem" mode="widthFix" src="cloud://youth-ky2ez.796f-youth-ky2ez-1301271089/swiper1.jpeg"/>
+    </swiper-item>
 
-    <!--右侧商品内容-->
-    <scroll-view scroll-top="{{scrollTop}}" scroll-y class="right_content">
-      <view 
-      class="goods_group"
-      wx:for="{{rightContent}}"
-      wx:for-index="index1"
-      wx:for-item="item1"
-      >
-        <view class="goods_title">
-          <text class="delimiter">/</text>
-          <text class="title">{{item1.cat_name}}</text>
-          <text class="delimiter">/</text>
+    <swiper-item>
+        <image class="swiperItem" mode="widthFix" src="cloud://youth-ky2ez.796f-youth-ky2ez-1301271089/swiper2.jpg"/>
+    </swiper-item>
+
+    <swiper-item>
+        <image class="swiperItem" mode="widthFix" src="cloud://youth-ky2ez.796f-youth-ky2ez-1301271089/swiper3.jpeg"/>
+    </swiper-item>
+</swiper>
+
+<view class="bottom">
+    <view class="left">
+        <view class="welfare">
+            <text>每日福利</text>
+            <image mode="widthFix" src="../../icon/fuli.png"></image>
         </view>
-
-        <view class="goods_list">
-          <navigator 
-          wx:for="{{item1.children}}"
-          wx:for-index="index2"
-          wx:for-item="item2"
-          wx:key="cat_id"
-          url="/pages/goods_list/goods_list?cid={{item2.cat_id}}"
-          >
-          <image mode="widthFix" src="{{item2.cat_icon}}"></image>
-          <view class="goods_name">{{item2.cat_name}}</view>
-          </navigator>
+        <view class="split"></view>
+        <view class="new">
+            <text>每日新品</text>
+            <image mode="widthFix" src="../../icon/xinpin.png"></image>
         </view>
+    </view>
+    <view class="right">
+        <view class="category">
+            <image mode="widthFix" src="../../icon/fenlei.png"></image>
+            <navigator url="../category/category">分类</navigator>
+        </view>
+        <view class="wish">
+            <image mode="widthFix" src="../../icon/xinyuandan(shop).png"></image>
+            <navigator url="">心愿单</navigator>   <!--还没写url-->
+        </view>
+        <view class="limited">
 
-      </view>
-    </scroll-view>
-  </view>
+        </view>
+    </view>
 </view>

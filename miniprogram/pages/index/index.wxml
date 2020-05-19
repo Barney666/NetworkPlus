@@ -1,7 +1,4 @@
-
-
 <image class="index_background" mode="widthFix" src="cloud://youth-ky2ez.796f-youth-ky2ez-1301271089/indexBackground.png"/>
-
 
 
 <view class="top">
@@ -22,7 +19,8 @@
 
   <view class="bottomRightWord">
     <view class="shell">
-      <view class="rainbow">
+      <view class="rainbow"></view>
+      <view class="jinbei">
         <text class="word">小金贝</text>
         <image mode="widthFix" src="../../icon/beike.png"></image>
         <view class="split"></view>
@@ -34,7 +32,7 @@
       <image mode="widthFix" src="../../icon/danao.png"></image>
       <text class="brain_training_text">大脑训练</text>
       <view class="start">
-        <text class="start_text">开始</text>
+        <navigator class="start_text" url="../game_category/game_category">开始</navigator>
       </view>
     </view>
 

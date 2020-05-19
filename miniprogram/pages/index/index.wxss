@@ -50,36 +50,49 @@
   display: flex;
   flex-direction: column;
 }
+
 .shell .rainbow{
-  width: 130px;
-  height: 34px;
+  width: 250rpx;
+  height: 68rpx;
   background-image: linear-gradient(180deg, #E02020 0%, #FA6400 17%, #F7B500 33%, #6DD400 50%, #0091FF 67%, #6236FF 83%, #B620E0 100%);
+  opacity: 0.7;
   border: 2rpx solid #000000;
   border-radius: 67rpx;
   margin-left: 300rpx;
   margin-top: 35rpx;
   display: flex;
   flex-direction: row;
+  position: absolute;
+  z-index: 0;
 }
-.rainbow .word{
+.jinbei{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: 1;
+}
+.jinbei .word{
+  width: 160rpx;
   font-size: larger;
   font-weight: bold;
-  margin-left: 10rpx;
-  margin-top: 5rpx;
+  margin-left: 310rpx;
+  margin-top: 45rpx;
 }
-.rainbow .num{
-  font-size: larger;
-  font-weight: bold;
-  margin-left: 10rpx;
-  margin-top: 5rpx;
+.jinbei image{
+  width: 15%;
+  margin-top: 45rpx;
 }
-.rainbow image{
-  width: 25%;
-  margin-top: 3rpx;
-}
-.rainbow .split{
+.jinbei .split{
+  height: 68rpx;
   border: 2rpx solid #000000;
   margin-left: 10rpx;
+  margin-top: 35rpx;
+}
+.jinbei .num{
+  font-size: larger;
+  font-weight: bold;
+  margin-left: 15rpx;
+  margin-top: 45rpx;
 }
 
 
@@ -119,7 +132,7 @@
   font-family: PingFangSC-Semibold;
   font-size: 40rpx;
   color: #0091FF;
-  margin-top: 50rpx;
+  margin-top: 5rpx;
 }
 
 .parent_child{

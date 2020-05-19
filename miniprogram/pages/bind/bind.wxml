@@ -1,0 +1,41 @@
+<view class="all">
+
+    <view wx:if="{{bindInfo.familyName}}">
+        <view>{{bindInfo.familyName}}要和你绑定</view>
+        <button type="primary" plain bindtap="updateDatabase">
+            <navigator open-type="switchTab" url="../self/self">确认绑定</navigator>
+        </button>
+    </view>
+    <view wx:else>
+
+        <view>
+            <input bindinput="realInput" data-index="familyWechat" placeholder="请输入要与您绑定的家人的微信号"/>
+        </view>
+
+        <view>
+            <picker bindchange="identityPick" value="{{index}}" range="{{identityArray}}">
+                <view class="choice">
+                    身份选择[您-您的家人]：{{identityArray[index]}}
+                </view>
+            </picker>
+        </view>
+
+        <button type="primary" plain bindtap="confirm">
+            <navigator open-type="switchTab" url="../self/self">确认</navigator>
+        </button>
+
+    </view>
+
+
+<!--    <view wx:if="{{index!=null}}">-->
+<!--        <view wx:if="{{0<=index && index<=11}}">-->
+<!--            <view>如果您方便的话，请填写一份问卷</view>-->
+<!--        </view>-->
+<!--        <view wx:else>-->
+<!--            <view>小伙子</view>-->
+<!--        </view>-->
+<!--    </view>-->
+<!--TODO 配置云函数 利用客服button推送消息来发问卷(个人账号用不了web-view)-->
+
+</view>
+

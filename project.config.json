@@ -14,6 +14,7 @@
 	"libVersion": "2.8.1",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -37,12 +38,6 @@
 		"miniprogram": {
 			"current": -1,
 			"list": [
-				{
-					"id": -1,
-					"name": "db guide",
-					"pathName": "pages/databaseGuide/databaseGuide",
-					"query": ""
-				},
 				{
 					"id": -1,
 					"name": "pages/shop/shop",
@@ -89,6 +84,21 @@
 					"id": -1,
 					"name": "亲子账户",
 					"pathName": "pages/parent_child/parent_child",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/bind/bind",
+					"pathName": "pages/bind/bind",
+					"query": "",
 					"scene": null
 				}
 			]

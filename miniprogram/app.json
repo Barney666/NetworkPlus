@@ -1,10 +1,14 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/game/game",
-    "pages/shop/shop",
     "pages/self/self",
-    "pages/login/login",
+    "pages/q/q",
+    "pages/realInfo/realInfo",
+    "pages/bind/bind",
+    "pages/category/category",
+    "pages/shop/shop",
+    "pages/index/index",
+    "pages/game_category/game_category",
+    "pages/game/game",
     "pages/search/search",
     "pages/goods_list/goods_list",
     "pages/goods_detail/goods_detail",

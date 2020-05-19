@@ -1,3 +1,45 @@
-<image class="user_icon" src="{{userInfo.avatarUrl}}"></image>
+<view class="all">
 
-<navigator url="../login/login" >点击登陆</navigator>
+    <view class="top">
+
+        <view wx:if="{{userInfo.avatarUrl}}" class="notLogIn">
+            <image class="user_icon" src="{{userInfo.avatarUrl}}"></image>
+            <view class="nickName">{{userInfo.nickName}}</view>
+        </view>
+        <view wx:else class="LoggedIn">
+            <button type="primary" plain open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">
+                点击登录
+            </button>
+        </view>
+
+    </view>
+
+    <view class="mid">
+
+        <view wx:if="{{realInfo.realName}}" class="notReal">
+            <view>你好 {{realInfo.realName}}</view>
+            <view>你的年龄 {{realInfo.age}}</view>
+        </view>
+        <view wx:else class="real">
+            <button type="primary" plain>
+                <navigator open-type="redirect" url="../realInfo/realInfo">填写个人信息</navigator>
+            </button>
+        </view>
+
+    </view>
+
+    <view class="bottom">
+
+        <view wx:if="{{bindInfo.familyName}}">
+            <view>您的身份:{{bindInfo.selfIdentity}}</view>
+            <view>与您绑定的人:{{bindInfo.familyIdentity}}---{{bindInfo.familyName}}</view>
+        </view>
+        <view wx:else class="Binded">
+        <button type="primary" plain>
+            <navigator open-type="redirect" url="../bind/bind">绑定亲子账户</navigator>
+        </button>
+    </view>
+
+    </view>
+
+</view>

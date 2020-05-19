@@ -2,5 +2,6 @@
   "usingComponents": {
     "SearchInput": "../../components/SearchInput/SearchInput"
   },
-  "navigationBarTitleText": "积分商城"
+  "navigationBarTitleText": "金贝商城"
+
 }
