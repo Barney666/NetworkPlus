@@ -1,10 +1,43 @@
 <image class="index_background" mode="widthFix" src="cloud://youth-ky2ez.796f-youth-ky2ez-1301271089/indexBackground.png"/>
 
+<!--<view class="top">-->
+
+<!--  <view class="leftText">-->
+<!--    <image class="user_icon" src="{{userInfo.avatarUrl}}"></image>-->
+<!--  </view>-->
+
+<!--</view>-->
+
+<!--<view class="mid_v1">-->
+
+<!--  <view class="brain_training">-->
+<!--    <image mode="widthFix" src="../../icon/danao.png"></image>-->
+<!--    <text class="brain_training_text">大脑训练</text>-->
+<!--    <view class="start">-->
+<!--      <navigator class="start_text" url="../game_category/game_category">开始</navigator>-->
+<!--    </view>-->
+<!--  </view>-->
+
+<!--  <view class="parent_child">-->
+<!--    <image mode="widthFix" src="../../icon/parent_child.png"></image>-->
+<!--    <navigator class="parent_child_text" open-type="navigate" url="../family_pk/family_pk">亲子PK</navigator>-->
+<!--  </view>-->
+
+<!--</view>-->
+
+
+
+
+
+
+
+<!--分割线！！！！！！！！！！！！！！！！！！！！！！！！！！！！ 下面是正常版本 ❗️ 用的时候把上面全删了 把下面全取消注释就行-->
 
 <view class="top">
 
   <view class="leftText">
     <image class="user_icon" src="{{userInfo.avatarUrl}}"></image>
+
     <view class="left_module">
       <image mode="widthFix" src="../../icon/qiandao.png"></image>
       <text>每日签到</text>
@@ -15,9 +48,11 @@
       <image mode="widthFix" src="../../icon/shuimian.png"></image>
       <text>睡眠计划</text>
     </view>
+
   </view>
 
   <view class="bottomRightWord">
+
     <view class="shell">
       <view class="rainbow"></view>
       <view class="jinbei">
@@ -40,6 +75,7 @@
       <image mode="widthFix" src="../../icon/parent_child.png"></image>
       <navigator class="parent_child_text" url="../parent_child/parent_child">亲子互动</navigator>
     </view>
+
   </view>
 
 </view>
@@ -49,14 +85,14 @@
 <view class="bottom">
   <text class="outText">更多功能模块</text>
 
-  <view class="out">
-    <image mode="widthFix" src="../../icon/yinshi.png"></image>
-    <text class="leftText">饮食优化:</text>
-    <view class="bottomRightWord">
-      <text>查询健康食物</text>
-      <text>合理规划饮食</text>
-    </view>
-    <text class="go">></text>
+  <view class="out" bindtap="goDiet">
+      <image mode="widthFix" src="../../icon/yinshi.png"></image>
+      <text class="leftText">饮食优化:</text>
+      <view class="bottomRightWord">
+        <text>查询健康食物</text>
+        <text>合理规划饮食</text>
+      </view>
+      <text class="go">></text>
   </view>
 
   <view class="out">

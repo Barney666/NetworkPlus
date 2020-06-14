@@ -1,0 +1,98 @@
+/* pages/diet/diet.wxss */
+.top{
+    display: flex;
+    flex-direction: column;
+    height: 700rpx;
+}
+.query{
+    margin-top: 20rpx;
+    margin-left: 40rpx;
+    margin-bottom: 20rpx;
+    font-size: 30rpx;
+    font-style: italic;
+    font-weight: bold;
+    color: #0D93F2;
+}
+.search_bar {
+    position: relative;
+    padding: 16rpx 20rpx;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    box-sizing: border-box;
+    background-color: #EFEFF4;
+    border-top: 1rpx solid #D7D6DC;
+    border-bottom: 1rpx solid #D7D6DC;
+
+}
+.icon_search {
+    margin-right: 16rpx;
+    font-size: inherit;
+}
+.icon_search_in_box {
+    position: absolute;
+    left: 20rpx;
+    top: 14rpx;
+}
+.search_bar_text {
+    display: inline-block;
+    font-size: 28rpx;
+    vertical-align: middle;
+}
+.search_bar_form {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: auto;
+    flex: auto;
+    border-radius: 20rpx;
+    background: #FFFFFF;
+    border: 1rpx solid #E6E6EA;
+}
+.search_bar_box {
+    position: relative;
+    padding-left: 60rpx;
+    padding-right: 60rpx;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.search_bar_input {
+    height: 56rpx;
+    line-height: 56rpx;
+    font-size: 28rpx;
+}
+.icon_clear {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 14rpx 16rpx;
+    font-size: 0;
+}
+.search_bar_label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    border-radius: 20rpx;
+    text-align: center;
+    color: #9B9B9B;
+    background: #FFFFFF;
+    line-height: 56rpx;
+}
+.search_bar_cancelBtn {
+    margin-left: 20rpx;
+    line-height: 56rpx;
+    color: #09BB07;
+    white-space: nowrap;
+    font-size: 30rpx;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+}
+.photo{
+    margin: 20rpx;
+}

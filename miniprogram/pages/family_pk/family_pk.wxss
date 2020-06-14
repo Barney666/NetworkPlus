@@ -1,0 +1,49 @@
+/* pages/family_pk/family_pk.wxss */
+
+.remind{
+    font-size: 30rpx;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 40rpx;
+    color: rgba(0, 0, 255, 1);
+}
+
+.record{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.self{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border: 2rpx solid #979797;
+    border-radius: 20rpx;
+    margin: 20rpx;
+    flex-grow: 1;
+}
+.official{
+    font-size: 30rpx;
+    font-weight: bold;
+}
+.specialRecord{
+    display: flex;
+    flex-direction: row;
+}
+.notData{
+
+}
+.Data{
+    font-weight: bold;
+    color: #eb4450;
+}
+
+.family{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border: 2rpx solid #979797;
+    border-radius: 20rpx;
+    margin: 20rpx;
+    flex-grow: 1;
+}

@@ -1,0 +1,52 @@
+<!--pages/family_pk/family_pk.wxml-->
+<!--每个游戏一个库 不同游戏的PK进不同的页面-->
+<view class="remind">【注意：只获取每个用户最近的10条记录】</view>
+<!--后面有时间再搞分页吧-->
+
+<view class="record">
+
+    <view class="self">
+
+        <view class="official">您的舒尔特方格训练记录：</view>
+
+        <view wx:if="{{selfRecord.length==0}}">暂无记录</view>     <!--用判断length的方式才能正常-->
+        <view wx:else>
+            <view wx:for="{{selfRecord}}">
+                <view class="specialRecord" wx:if="{{index<10}}">
+                    <view class="Data">{{item.date}}</view>
+                    <view class="notData">花费</view>
+                    <view class="Data">{{item.seconds}}</view>
+                    <view class="notData">秒完成</view>
+                    <view class="Data">{{item.num}}</view>
+                    <view class="notData">*</view>
+                    <view class="Data">{{item.num}}</view>
+                    <view class="notData">的舒尔特方格</view>
+                </view>
+            </view>
+        </view>
+
+    </view>
+
+    <view class="family">
+
+        <view class="official">您绑定的家人{{bindInfo.familyName}}的舒尔特方格训练记录：</view>
+
+        <view wx:if="{{familyRecord.length==0}}">暂无记录</view>    <!--用判断length的方式才能正常-->
+        <view wx:else>
+            <view wx:for="{{familyRecord}}">
+                <view class="specialRecord">
+                    <view class="Data">{{item.date}}</view>
+                    <view class="notData">花费</view>
+                    <view class="Data">{{item.seconds}}</view>
+                    <view class="notData">秒完成</view>
+                    <view class="Data">{{item.num}}</view>
+                    <view class="notData">*</view>
+                    <view class="Data">{{item.num}}</view>
+                    <view class="notData">的舒尔特方格</view>
+                </view>
+            </view>
+        </view>
+
+    </view>
+
+</view>

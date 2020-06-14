@@ -2,9 +2,9 @@
 .search_input{
   height: 90rpx;
   padding: 10rpx;
-   background-color: var(--themeColor);
+   /*background-color: var(--themeColor);*/
   /*background-color: rgb(212, 207, 207);*/
-  /*background-color: #C8EFFC;*/
+  background-color: #C8EFFC;
 }
 
 .search_input navigator{

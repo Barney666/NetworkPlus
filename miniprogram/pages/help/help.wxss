@@ -1,0 +1,13 @@
+/* pages/help/help.wxss */
+.all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.word{
+    font-size: 40rpx;
+    font-weight: bold;
+    margin-bottom: 40rpx;
+}

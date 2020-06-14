@@ -20,6 +20,10 @@ Page({
   confirm(e){
     console.log(this.data.realInfo);
     wx.setStorageSync("realInfo",this.data.realInfo);
-  }
+    wx.switchTab({
+      url:"../self/self"
+    })
+  },
+
 
 })

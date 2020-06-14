@@ -1,0 +1,33 @@
+<!--pages/game/game.wxml-->
+<view class="container">
+
+    <view class="g-ta--c">{{time}}</view>
+
+    <view wx:if="{{now_num<=grid_num}}" class="remind">下一个：{{now_num}}</view>
+
+    <view class="response">
+        <text wx:if="{{wrong==1}}" class="right">正确</text>
+        <text wx:elif="{{wrong==-1}}" class="wrong">错误</text>
+        <text wx:else decode="{{true}}">&emsp;</text>
+    </view>
+
+    <view class="game_wrap">
+        <view class="game grid--{{grid_num}}">
+            <block wx:for="{{game_arr}}" wx:for-index="idx" wx:for-item="item">
+                <view class="game_gird {{item.checked?'active':''}}"
+                      bindtap="chooseNum"
+                      data-num="{{item.num}}"
+                      data-index="{{idx}}">
+                    <view class="game_num">
+                        {{item.num}}
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+
+    <view class="rule">请以升序从1到{{grid_num}}点按数字</view>
+
+    <button class="end" type="default" bindtap="stopCount">结束游戏</button>
+    <button class="restart" type="primary" bindtap="returnGame">重新开始</button>
+</view>

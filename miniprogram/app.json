@@ -7,12 +7,16 @@
     "pages/shop/shop",
     "pages/index/index",
     "pages/game_category/game_category",
-    "pages/game/game",
+    "pages/schulte/schulte",
+    "pages/memory_matrix/memory_matrix",
     "pages/search/search",
     "pages/goods_list/goods_list",
     "pages/goods_detail/goods_detail",
     "pages/cart/cart",
-    "pages/parent_child/parent_child"
+    "pages/parent_child/parent_child",
+    "pages/family_pk/family_pk",
+    "pages/help/help",
+    "pages/diet/diet"
   ],
   "window": {
     "background-color": "#F6F6F6",
@@ -24,10 +28,10 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/shop/shop",
-        "text": "商城",
-        "iconPath": "icon/icon-n-3.png",
-        "selectedIconPath": "icon/icon-y-3.png"
+        "pagePath": "pages/help/help",
+        "text": "帮助",
+        "iconPath": "icon/help-n.png",
+        "selectedIconPath": "icon/help-y.png"
       },
       {
         "pagePath": "pages/index/index",

@@ -27,9 +27,7 @@
             </view>
         </view>
         <view wx:else class="real">
-            <button type="primary" plain>
-                <navigator open-type="redirect" url="../realInfo/realInfo">填写个人信息</navigator>
-            </button>
+            <button type="primary" plain bindtap="fillRealInfo">填写个人信息</button>
         </view>
 
     </view>
@@ -56,9 +54,7 @@
         <view wx:elif="{{bindInfo.familyWechat}}" class="remind">等待对方确认绑定中...</view>
 
         <view wx:else class="bound">
-            <button type="primary" plain>
-                <navigator open-type="redirect" url="../bind/bind">绑定亲子账户</navigator>
-            </button>
+            <button type="primary" plain bindtap="fillBindInfo">绑定亲子账户</button>
         </view>
 
     </view>

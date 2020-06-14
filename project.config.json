@@ -107,6 +107,40 @@
 					"pathName": "pages/game_category/game_category",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/schulte/schulte",
+					"pathName": "pages/schulte/schulte",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/family_pk/family_pk",
+					"pathName": "pages/family_pk/family_pk",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/help/help",
+					"pathName": "pages/help/help",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/memory_matrix/memory_matrix",
+					"pathName": "pages/memory_matrix/memory_matrix",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 14,
+					"name": "pages/diet/diet",
+					"pathName": "pages/diet/diet",
+					"scene": null
 				}
 			]
 		}

@@ -1,0 +1,42 @@
+<!--pages/memory_matrix/memory_matrix.wxml-->
+
+<view>
+
+    <view class="top">
+        <view class="frame">
+            <view class="num">需要记忆的个数：</view>
+            <view class="special">{{select_num}}</view>
+        </view>
+        <view class="frame">
+            <view class="score">总得分：</view>
+            <view class="special">{{score}}</view>
+        </view>
+    </view>
+
+    <view class="game_wrap">
+        <view class="game grid--{{grid_num}}">
+            <block wx:for="{{game_arr}}" wx:for-index="index" wx:for-item="item">
+                <view class='game_gird'>
+                    <!--正面的框  -->
+                    <view class="box b1" animation="{{game_arr[index].animationMain}}" bindtap='rotateFn' data-id="1" data-index="{{index}}">
+                    </view>
+                    <!--背面的框  -->
+                    <view wx:if="{{game_arr[index].num==1}}" class="box b2" animation="{{game_arr[index].animationBack}}"  bindtap='rotateFn' data-id="2" data-index="{{index}}">
+                    </view>
+                    <view wx:else class="box b3" animation="{{game_arr[index].animationBack}}"  bindtap='rotateFn' data-id="2" data-index="{{index}}">
+                        <image mode="widthFix" src="../../icon/wrong.png"></image>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+
+    <view class="rule">请记忆翻转后为绿色的卡片的位置，并正确将其复原</view>
+
+    <button class="end" type="primary" bindtap="stopCount">保存记录</button>
+    <button class="restart" type="default" bindtap="restart">重新开始</button>
+
+</view>
+
+
+

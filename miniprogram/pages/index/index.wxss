@@ -1,3 +1,98 @@
+/*.index_background{*/
+/*   width: 100%;*/
+/*   height: 100%;*/
+/*   position:fixed;*/
+/*   background-size:100% 100%;*/
+/*   z-index: -1;      !* 置于底层 *!*/
+/*}*/
+/*.top{*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+
+/*}*/
+/*.leftText{*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*}*/
+/*.user_icon{*/
+/*  width: 130rpx;*/
+/*  height: 130rpx;*/
+/*  border-radius: 50%;*/
+/*  margin: 25rpx;*/
+/*}*/
+
+/*.mid_v1{*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  justify-content: center;*/
+/*}*/
+
+/*.brain_training{*/
+/*  width: 408rpx;*/
+/*  height: 432rpx;*/
+/*  background-image: linear-gradient(180deg, #0091FF 0%, #32C5FF 100%);*/
+/*  border: 2rpx solid #979797;*/
+/*  border-radius: 67rpx;*/
+/*  margin-left: 190rpx;*/
+/*  margin-top: 50rpx;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*}*/
+/*.brain_training image{*/
+/*  margin-top: 20rpx;*/
+/*  width: 55%;*/
+/*}*/
+/*.brain_training .brain_training_text{*/
+/*  font-size: 50rpx;*/
+/*  color: #ffffff;*/
+/*  margin-top: 10rpx;*/
+/*}*/
+/*.brain_training .start{*/
+/*  width: 170rpx;*/
+/*  height: 66rpx;*/
+/*  border-radius: 66rpx;*/
+/*  background-color: rgba(255, 255, 255, 1);*/
+/*  border: 2rpx solid rgba(151, 151, 151, 1);*/
+/*  margin-top: 30rpx;*/
+/*  text-align: center;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*}*/
+/*.start .start_text{*/
+/*  font-family: PingFangSC-Semibold;*/
+/*  font-size: 40rpx;*/
+/*  color: #0091FF;*/
+/*  margin-top: 5rpx;*/
+/*}*/
+
+/*.parent_child{*/
+/*  width: 380rpx;*/
+/*  height: 85rpx;*/
+/*  background-image: linear-gradient(53deg, #0D93F2 0%, #0091FF 0%, #E0F6FB 0%, #E0F6FB 0%, #C8EFFC 12%, #32C5FF 100%, #0091FF 100%);*/
+/*  border: 2rpx solid #979797;*/
+/*  border-radius: 67rpx;*/
+/*  margin-top: 100rpx;*/
+/*  margin-left: 190rpx;*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*}*/
+/*.parent_child image{*/
+/*  width: 20%;*/
+/*}*/
+/*.parent_child .parent_child_text{*/
+/*  font-family: STHeitiSC-Medium;*/
+/*  font-size: 48rpx;*/
+/*  color: #000000;*/
+/*  margin-left: 10rpx;*/
+/*}*/
+
+
+
+/*下面这些是正常版用的❗❗❗❗❗❗❗❗❗❗❗❗❗❗❗❗ 用的时候把上面全删了 把下面全取消注释就行️*/
+
 .index_background{
    width: 100%;
    height: 100%;
@@ -5,7 +100,6 @@
    background-size:100% 100%;
    z-index: -1;      /* 置于底层 */
 }
-
 
 .top{
   display: flex;

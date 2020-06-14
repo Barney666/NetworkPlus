@@ -1,0 +1,97 @@
+/* pages/game/game.wxss */
+Page{
+    background-color: #EBECEE;
+}
+.g-ta--c{
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
+    display: flex;
+    justify-content: center;
+    font-size: 60rpx;
+    font-weight: bold;
+    color: #eb4450;
+}
+.remind{
+    font-size: 40rpx;
+    font-weight: bold;
+    /*margin: 20rpx;*/
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20rpx;
+    color: #666666;
+}
+.response{
+    font-size: 40rpx;
+    font-style: italic;
+    margin-left: 60rpx;
+    margin-bottom: 30rpx;
+}
+.right{
+    color: #00EE00;
+}
+.wrong{
+    color: #EE0000;
+}
+
+.game_wrap{
+    width:100%;
+}
+.game{
+    width:700rpx;
+    height:700rpx;
+    margin:0 auto;    /*垂直水平居中*/
+    border-left:1px solid #ddd;
+    border-top:1px solid #ddd;
+    display:flex;
+    flex-flow:row wrap;
+    align-content:flex-start;
+}
+.grid--9 .game_gird{
+    flex: 0 0 calc(100% / 3);
+    height:calc(700rpx / 3);
+}
+.grid--16 .game_gird{
+    flex: 0 0 calc(100% / 4);
+    height:calc(700rpx / 4);
+}
+.grid--25 .game_gird{
+    flex: 0 0 calc(100% / 5);
+    height:calc(700rpx / 5);
+}
+.grid--36 .game_gird{
+    flex: 0 0 calc(100% / 6);
+    height:calc(700rpx / 6);
+}
+.game_gird{
+    box-sizing: border-box;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    position: relative;
+}
+.game_gird.active{
+    background-color:#ddd;
+    /*background-color:rgb(129,259,125);*/
+}
+.game_num{
+    display:block;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 60rpx;
+}
+
+.rule{
+    margin: 40rpx;
+    font-size: 40rpx;
+    font-style: italic;
+    font-weight: bold;
+    color: #0D93F2;
+}
+.end{
+    margin: 40rpx;
+}
+.restart{
+    margin: 40rpx;
+}

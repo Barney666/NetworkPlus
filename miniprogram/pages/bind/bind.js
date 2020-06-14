@@ -66,7 +66,7 @@ Page({
     var that=this;
     setTimeout(function(){
       that.setData({onOff:true});
-    },2000);
+    },1500);
   },
 
 
@@ -94,6 +94,9 @@ Page({
     var realInfo=wx.getStorageSync("realInfo");
 
     if(userInfo!=null && realInfo!=null){
+      wx.showToast({
+
+      })
       db.collection("User").add({    //存自己的
         data:{
           userInfo:userInfo,
@@ -120,6 +123,9 @@ Page({
       }).then(res=>{
         console.log("存")
         console.log(res)
+        wx.switchTab({
+          url:"../self/self"
+        })
       })
 
     }
@@ -127,6 +133,12 @@ Page({
 
 
   async updateDatabase(){
+    wx.showToast({
+      title: '绑定成功！',
+      icon: 'none',    //如果要纯文本，不要icon，将值设为'none'
+      duration: 2000,
+      mask:true
+    });
     //找familyId
     var that=this;
     const db=wx.cloud.database();
@@ -158,6 +170,9 @@ Page({
         },
         success: res => {
           console.log('更新数据成功')
+          wx.switchTab({
+            url:"../self/self"
+          })
         }
       })
     })

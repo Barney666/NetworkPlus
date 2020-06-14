@@ -17,8 +17,6 @@
         <input bindinput="realInput" data-index="wechat" placeholder="请输入您的微信号"/>
     </view>
 
-    <button type="primary" plain bindtap="confirm">
-        <navigator open-type="switchTab" url="../self/self">确认</navigator>
-    </button>
+    <button type="primary" plain bindtap="confirm">确认</button>
 
 </view>

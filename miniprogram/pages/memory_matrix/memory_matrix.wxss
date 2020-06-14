@@ -1,0 +1,122 @@
+/*!* pages/memory_matrix/memory_matrix.wxss *!*/
+
+.top{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20rpx;
+    margin-bottom: 50rpx;
+}
+.frame{
+    display: flex;
+    flex-direction: row;
+}
+.num{
+    font-size: 40rpx;
+    font-style: italic;
+    margin-left: 30rpx;
+    flex-grow: 1;
+}
+.score{
+    font-size: 40rpx;
+    font-style: italic;
+    margin-left: 100rpx;
+    flex-grow: 5;
+}
+.special{
+    font-size: 40rpx;
+    font-style: bold;
+    color: red;
+}
+
+.game_wrap{
+    width:100%;
+}
+.game{
+    width:700rpx;
+    height:700rpx;
+    margin:0 auto;
+    display:flex;
+    flex-flow:row wrap;
+    align-content:flex-start;
+}
+.grid--25 .game_gird{
+    flex: 0 0 calc(100% / 5);
+    height:calc(700rpx / 5);
+    border-left:2rpx solid #ddd;
+    border-top:2rpx solid #ddd;
+    border-radius: 20rpx;
+}
+.grid--36 .game_gird{
+    flex: 0 0 calc(100% / 6);
+    height:calc(700rpx / 6);
+    border-left:2rpx solid #ddd;
+    border-top:2rpx solid #ddd;
+    border-radius: 20rpx;
+}
+.grid--49 .game_gird{
+    flex: 0 0 calc(100% / 7);
+    height:calc(700rpx / 7);
+    border-left:2rpx solid #ddd;
+    border-top:2rpx solid #ddd;
+    border-radius: 20rpx;
+}
+.game_gird{
+    box-sizing: border-box;
+    background-color: white;
+    border-bottom: 2rpx solid #ddd;
+    border-right: 2rpx solid #ddd;
+    border-radius: 20rpx;
+    position: relative;
+    /*分割线*/
+    -webkit-perspective: 1500;
+    -moz-perspective: 1500;
+}
+.box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+    backface-visibility: hidden;
+    border-radius: 20rpx;
+    cursor: pointer;
+}
+/*.box image{*/
+/*    border-radius: 10px;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*}*/
+.b1{
+    background:skyblue;
+}
+.b2 {
+    background:GreenYellow;
+    transform: rotateY(-180deg);
+}
+.b3{
+    transform: rotateY(-180deg);
+}
+.b3 image{
+    width: 70%;
+    height: 70%;
+    transform: translate(25%,20%);
+}
+
+
+
+.rule{
+    margin: 40rpx;
+    font-size: 40rpx;
+    font-style: italic;
+    font-weight: bold;
+    color: #0D93F2;
+}
+.end{
+    margin: 40rpx;
+}
+.restart{
+    margin: 40rpx;
+}
+
+

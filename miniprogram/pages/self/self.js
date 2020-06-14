@@ -40,6 +40,7 @@ Page({
         if(res.data!=[]){
           that.storeSyncData(res.data[0]);
         }
+        wx.stopPullDownRefresh();
       }
     })
   },
@@ -75,6 +76,46 @@ Page({
     const bindInfo=data.bindInfo;
     wx.setStorageSync("bindInfo",bindInfo);
     this.setData({bindInfo});
+  },
+
+  fillRealInfo(){
+    if(this.data.userInfo.avatarUrl==undefined){
+      wx.showToast({
+        title: '请先登录！',
+        icon: 'none',    //如果要纯文本，不要icon，将值设为'none'
+        duration: 1500,
+        mask:true
+      })
+    }
+    else{
+      wx.redirectTo({
+        url:"../realInfo/realInfo"
+      })
+    }
+  },
+
+  fillBindInfo(){
+    if(this.data.userInfo.avatarUrl==undefined){
+      wx.showToast({
+        title: '请先登陆！',
+        icon: 'none',    //如果要纯文本，不要icon，将值设为'none'
+        duration: 1500,
+        mask:true
+      })
+    }
+    else if(this.data.realInfo.realName==undefined){
+      wx.showToast({
+        title: '请先填写个人信息！',
+        icon: 'none',    //如果要纯文本，不要icon，将值设为'none'
+        duration: 1500,
+        mask:true
+      })
+    }
+    else{
+      wx.redirectTo({
+        url:"../bind/bind"
+      })
+    }
   },
 
 

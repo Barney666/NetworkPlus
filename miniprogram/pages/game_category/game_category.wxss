@@ -16,7 +16,7 @@
     width: 230rpx;
     flex-grow: 1;
     margin-left: 50rpx;
-    margin-top: 8rpx;
+    margin-top: 20rpx;
 }
 .right{
     display: flex;
@@ -31,5 +31,10 @@
 }
 .game_difficulty{
     font-size: 40rpx;
+}
+.gridPick{
+    font-size: 30rpx;
+    color: #E02020;
     font-style: italic;
+
 }

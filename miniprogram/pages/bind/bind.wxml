@@ -6,9 +6,7 @@
     <view wx:if="{{bindInfo.familyName}}">
 
         <view class="remind">{{bindInfo.familyName}}请求与您绑定</view>
-        <button type="primary" plain bindtap="updateDatabase">
-            <navigator open-type="switchTab" url="../self/self">确认绑定</navigator>
-        </button>
+        <button type="primary" plain bindtap="updateDatabase">确认绑定</button>
 
     </view>
 
@@ -31,9 +29,7 @@
             </picker>
         </view>
 
-        <button type="primary" plain bindtap="confirm">
-            <navigator open-type="switchTab" url="../self/self">确认</navigator>
-        </button>
+        <button type="primary" plain bindtap="confirm">确认</button>
 
     </view>
 

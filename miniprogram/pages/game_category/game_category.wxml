@@ -10,6 +10,31 @@
                 <view class="right">
                     <view class="game_name">舒尔特方格</view>
                     <view class="game_difficulty">难度系数: ⭐️⭐️</view>
+                    <picker bindchange="gridNumPick_Schulte" value="{{index}}" range="{{gridNumArray}}" class="gridPick">
+                        >>>点击选择大小并开始
+                    </picker>
+                </view>
+            </view>
+
+            <view class="second_game">
+
+            </view>
+
+        </view>
+    </block>
+
+
+    <block wx:if="{{tabs[1].isActive}}">
+        <view class="second_tab">
+
+            <view class="first_game">
+                <image mode="widthFix" src="cloud://youth-ky2ez.796f-youth-ky2ez-1301271089/memory_matrix.png"></image>
+                <view class="right">
+                    <view class="game_name">记忆矩阵</view>
+                    <view class="game_difficulty">难度系数：🌟🌟🌟</view>
+                    <picker bindchange="gridNumPick_Memory_Matrix" value="{{index}}" range="{{gridNumArray_Memory_Matrix}}" class="gridPick">
+                        >>>点击选择大小并开始
+                    </picker>
                 </view>
             </view>
 
@@ -17,9 +42,6 @@
     </block>
 
 
-
-
-    <block wx:if="{{tabs[1].isActive}}">1</block>
     <block wx:if="{{tabs[2].isActive}}">2</block>
     <block wx:if="{{tabs[3].isActive}}">3</block>
 </Tabs>
